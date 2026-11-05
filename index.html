@@ -1,0 +1,103 @@
+<!-- АБЫЛАЙ ХАН САЯСАТЫ — НЕОНДЫ ГЕЙМИФИКАЦИЯ БЛОКЫ -->
+<div id="topic6" class="topic-block active" style="font-family: 'Segoe UI', Tahoma, sans-serif; background: #090d16; padding: 25px; border-radius: 16px; box-shadow: 0 0 25px rgba(0, 243, 255, 0.15); margin-top: 25px; border: 2px solid #00f3ff; color: #ffffff;">
+    
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #00f3ff; padding-bottom: 12px; margin-top: 0;">
+        <h2 style="color: #00f3ff; margin: 0; font-size: 20px; text-shadow: 0 0 10px rgba(0,243,255,0.5);">⚡ CYBER-QUEST: Абылай хан саясаты</h2>
+        <span style="background: #ff007f; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: bold; box-shadow: 0 0 10px #ff007f;">Геймификация</span>
+    </div>
+
+    <p style="color: #94a3b8; margin-top: 15px; font-size: 14px;"><b>Миссьон мақсаты:</b> Абылай ханның ішкі және сыртқы саясаты бойынша деңгейлерді өтіп, 10 ұпай жинаңыз.</p>
+
+    <!-- Оқушы мәліметі -->
+    <div style="background: rgba(0, 243, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid rgba(0, 243, 255, 0.3);">
+        <label style="color: #00f3ff; font-weight: bold; font-size: 13px; text-transform: uppercase;">Оқушының аты-жөні:</label><br>
+        <input type="text" id="cyberName" placeholder="Есіміңізді енгізіңіз..." style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #00f3ff; border-radius: 6px; background: #0f172a; color: #fff; font-size: 14px; outline: none; box-sizing: border-box;">
+    </div>
+
+    <!-- 1-ДЕҢГЕЙ: ІШКИ САЯСАТ -->
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 18px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid #00f3ff; border: 1px solid rgba(0, 243, 255, 0.2);">
+        <h4 style="color: #00f3ff; margin-top: 0;">🔹 LEVEL 1: Қазақ хандығының ішкі жағдайы [3 балл]</h4>
+        <p style="color: #e2e8f0; font-size: 13px;"><i>Абылай хан билік басына келгенге дейінгі ішкі ахуал қандай еді?</i></p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+            <label class="neon-option"><input type="radio" name="c1" value="3"> Сұлтандар мен ру басылардың арасындағы өзара алауыздық пен билік үшін талас күшейді.</label>
+            <label class="neon-option"><input type="radio" name="c1" value="0"> Барлық рулар толық татулықта өмір сүрді.</label>
+        </div>
+    </div>
+
+    <!-- 2-ДЕҢГЕЙ: РЕФОРМА ЖӘНЕ ІШКИ САЯСАТ -->
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 18px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid #10b981; border: 1px solid rgba(16, 185, 129, 0.2);">
+        <h4 style="color: #34d399; margin-top: 0;">🔹 LEVEL 2: Абылай ханның ішкі саясаты [4 балл]</h4>
+        <p style="color: #e2e8f0; font-size: 13px;"><i>Абылай ханның мемлекетті орталықтандырудағы басты қадамы қандай болды?</i></p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+            <label class="neon-option-green"><input type="radio" name="c2" value="4"> Хан билігін күшейтіп, ру басшыларының дербестігін шектеді және орталықтандырылған саясат жүргізді.</label>
+            <label class="neon-option-green"><input type="radio" name="c2" value="0"> Хандық билікті жойып, республикалық басқаруға көшті.</label>
+        </div>
+    </div>
+
+    <!-- 3-ДЕҢГЕЙ: СЫРТҚЫ САЯСАТ -->
+    <div style="background: rgba(15, 23, 42, 0.8); padding: 18px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid #ff007f; border: 1px solid rgba(255, 0, 127, 0.2);">
+        <h4 style="color: #ff758f; margin-top: 0;">🔹 LEVEL 3: Сыртқы саясат & Дипломатия [3 балл]</h4>
+        <p style="color: #e2e8f0; font-size: 13px;"><i>Абылай ханның Ресей және Қытай империяларына қатысты ұстанған сыртқы саясаты қандай еді?</i></p>
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+            <label class="neon-option-pink"><input type="radio" name="c3" value="3"> Екі алып держава арасында икемді дипломатиялық тепе-теңдік (баланс) саясатын ұстанды.</label>
+            <label class="neon-option-pink"><input type="radio" name="c3" value="0"> Екі елмен де үнемі соғыс жағдайында болды.</label>
+        </div>
+    </div>
+
+    <button onclick="checkCyberScore()" style="background: linear-gradient(135deg, #00f3ff 0%, #0066ff 100%); color: #090d16; border: none; padding: 14px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; font-size: 16px; box-shadow: 0 0 15px rgba(0, 243, 255, 0.4); transition: 0.3s; text-transform: uppercase;">🚀 Квест нәтижесін іске қосу (10 балл)</button>
+
+    <div id="cyberResult" style="margin-top: 20px; font-weight: bold; font-size: 16px; text-align: center; padding: 12px; border-radius: 8px;"></div>
+</div>
+
+<style>
+.neon-option, .neon-option-green, .neon-option-pink {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #f8fafc;
+    font-size: 13px;
+    transition: 0.2s;
+    display: block;
+}
+.neon-option:hover { border-color: #00f3ff; background: rgba(0, 243, 255, 0.05); }
+.neon-option-green:hover { border-color: #34d399; background: rgba(52, 211, 153, 0.05); }
+.neon-option-pink:hover { border-color: #ff758f; background: rgba(255, 117, 143, 0.05); }
+input[type="radio"] { margin-right: 8px; accent-color: #00f3ff; }
+</style>
+
+<script>
+    function checkCyberScore() {
+        const name = document.getElementById('cyberName').value.trim();
+        if(!name) {
+            alert("Өтінемін, оқушының аты-жөнін жазыңыз!");
+            return;
+        }
+
+        let score = 0;
+        const c1 = document.querySelector('input[name="c1"]:checked');
+        const c2 = document.querySelector('input[name="c2"]:checked');
+        const c3 = document.querySelector('input[name="c3"]:checked');
+
+        if(c1) score += parseInt(c1.value);
+        if(c2) score += parseInt(c2.value);
+        if(c3) score += parseInt(c3.value);
+
+        const resDiv = document.getElementById('cyberResult');
+        resDiv.style.background = "rgba(0, 243, 255, 0.08)";
+        resDiv.style.border = "1px solid #00f3ff";
+        resDiv.innerHTML = `🎮 Cyber-Player: ${name} <br>⭐ Жинаған ұпайыңыз: ${score} / 10 балл`;
+        
+        if(score === 10) {
+            resDiv.style.color = "#00f3ff";
+            resDiv.innerHTML += "<br>🔥 LEGENDARY! Квест 100% сәтті аяқталды!";
+        } else if(score >= 6) {
+            resDiv.style.color = "#34d399";
+            resDiv.innerHTML += "<br>⚡ Жақсы нәтиже! Абылай хан саясатын жақсы меңгердіңіз.";
+        } else {
+            resDiv.style.color = "#ff758f";
+            resDiv.innerHTML += "<br>⚠️ Қателер бар, деңгейді қайта өтіп көріңіз!";
+        }
+    }
+</script>
